@@ -26,7 +26,7 @@ class BooksActivity : AppCompatActivity() {
         //O OBSERVER VAI RODAR E O
         //O RECYCLER VIEW SERÁ ATUALIZADO
         viewModel.booksLiveData.observe(this, Observer {
-            //O ?.let VERIFICA SE O VALOR NAO É NULO
+            //O '?.let' VERIFICA SE O VALOR NAO É NULO
             it?.let {
                 //O -> SERVE PARA SUBSTITUIR O NOME it
                 //PARA NAO PRECISAR FICAR USANDO rvList.adapter OU rvList.layout
